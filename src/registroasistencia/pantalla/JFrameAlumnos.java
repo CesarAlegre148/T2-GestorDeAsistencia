@@ -34,7 +34,7 @@ public class JFrameAlumnos extends javax.swing.JFrame {
         btnRegistrarAsistencia = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        lstAlumjno = new javax.swing.JList<>();
+        lstAlumno = new javax.swing.JList<>();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -67,12 +67,12 @@ public class JFrameAlumnos extends javax.swing.JFrame {
             }
         });
 
-        lstAlumjno.setModel(new javax.swing.AbstractListModel<String>() {
+        lstAlumno.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane1.setViewportView(lstAlumjno);
+        jScrollPane1.setViewportView(lstAlumno);
 
         jButton4.setText("Eliminar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -152,8 +152,7 @@ public class JFrameAlumnos extends javax.swing.JFrame {
                         .addGap(15, 15, 15)
                         .addComponent(jButton4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton5)
-                        .addGap(85, 85, 85)))
+                        .addComponent(jButton5)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSalir)
@@ -183,7 +182,10 @@ public class JFrameAlumnos extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
-
+    private void salir(){
+      
+        this.dispose();
+    }
     /**
      * @param args the command line arguments
      */
@@ -230,7 +232,7 @@ public class JFrameAlumnos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JList<String> lstAlumjno;
+    private javax.swing.JList<String> lstAlumno;
     private javax.swing.JTextField txtBuscar;
     // End of variables declaration//GEN-END:variables
 }
